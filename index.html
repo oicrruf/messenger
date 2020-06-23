@@ -50,7 +50,33 @@
                 <li class="nav-item">Chats</li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-link my-2 my-sm-0">
+                <button
+                  type="button"
+                  class="btn btn-link my-2 my-sm-0"
+                  data-container="body"
+                  data-toggle="popover"
+                  data-placement="bottom"
+                  data-html="true"
+                  data-content="<ul class='list-group'>
+                    <li class='list-group-item p-1 border-0'>Configuración</li>
+                    <li class='list-group-item p-0 border-0'><hr class='m-0'/></li>
+                    <li class='list-group-item p-1 border-0'>Contactos activos</li>
+                    <li class='list-group-item p-1 border-0'>Solicitudes de mensajes</li>
+                    <li class='list-group-item p-1 border-0'>Chats ocultos</li>
+                    <li class='list-group-item p-1 border-0'>Chats no leídos</li>
+                    <li class='list-group-item p-0 border-0'><hr class='m-0'/></li>
+                    <li class='list-group-item p-1 border-0'>Información</li>
+                    <li class='list-group-item p-1 border-0'>Condiciones</li>
+                    <li class='list-group-item p-1 border-0'>Política de privacidad</li>
+                    <li class='list-group-item p-1 border-0'>Política de cookies</li>
+                    <li class='list-group-item p-0 border-0'><hr class='m-0'/></li>
+                    <li class='list-group-item p-1 border-0'>Ayuda</li>
+                    <li class='list-group-item p-1 border-0'>Reportar un problema</li>
+                    <li class='list-group-item p-0 border-0'><hr class='m-0'/></li>
+                    <li class='list-group-item p-1 border-0'>Salir</li>
+                  </ul>"
+                  data-trigger="focus"
+                >
                   <i class="fas fa-cog"></i>
                 </button>
                 <button class="btn btn-link my-2 my-sm-0">
@@ -185,6 +211,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.1/dist/sweetalert2.all.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover();
+        $(".popover-dismiss").popover({
+          trigger: "focus",
+        });
+      });
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
