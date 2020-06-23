@@ -193,7 +193,108 @@
             </div>
 
             <div class="col-lg-8 border-right">
-              <h5>Messages</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item border-0 text-right">
+                  Cras justo odio
+                </li>
+                <li class="list-group-item border-0">
+                  Dapibus ac facilisis in
+                </li>
+                <li class="list-group-item border-0 text-right">
+                  Morbi leo risus
+                </li>
+                <li class="list-group-item border-0 text-right">
+                  Morbi leo risus
+                </li>
+                <li class="list-group-item border-0 text-right">
+                  Morbi leo risus
+                </li>
+                <li class="list-group-item border-0">
+                  Porta ac consectetur ac
+                  <button
+                    class="btn btn-link p-0 mx-1"
+                    type="button"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Reaccionar"
+                  >
+                    <i class="far fa-smile text-muted"></i>
+                  </button>
+                  <button
+                    class="btn btn-link p-0 mx-1"
+                    type="button"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Responder"
+                  >
+                    <i class="fas fa-reply text-muted"></i>
+                  </button>
+                  <button
+                    class="btn btn-link p-0 mx-1"
+                    type="button"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Más"
+                  >
+                    <i class="fas fa-ellipsis-h ml-2 text-muted"></i>
+                  </button>
+                </li>
+                <li class="list-group-item border-0">Vestibulum at eros</li>
+                <li class="list-group-item border-0 text-right">
+                  <button
+                    class="btn btn-link p-0 mx-1"
+                    type="button"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Responder"
+                  >
+                    <i class="fas fa-reply text-muted"></i>
+                  </button>
+                  <button
+                    class="btn btn-link p-0 mx-1"
+                    type="button"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Más"
+                  >
+                    <i class="fas fa-ellipsis-h text-muted"></i>
+                  </button>
+                  Morbi leo risus
+                </li>
+                <li class="list-group-item border-0 text-right">
+                  Cras justo odio
+                </li>
+                <li class="list-group-item border-0 text-right">
+                  Cras justo odio
+                </li>
+                <li class="list-group-item border-0">
+                  <i class="fas fa-image fa-6x"></i>
+                  <button
+                    class="btn btn-link p-0 mx-1 text-muted"
+                    type="button"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Reenviar"
+                    style="margin-top: -60px;"
+                  >
+                    <i class="far fa-share-square"></i>
+                  </button>
+                </li>
+                <li class="list-group-item border-0 text-right">
+                  Morbi leo risus
+                </li>
+                <li class="list-group-item border-0 text-right">
+                  Morbi leo risus
+                </li>
+                <li class="list-group-item border-0">Vestibulum at eros</li>
+                <li class="list-group-item border-0 text-right">
+                  Morbi leo risus
+                </li>
+                <li class="list-group-item border-0">Vestibulum at eros</li>
+                <li class="list-group-item border-0 text-right">
+                  Morbi leo risus
+                </li>
+              </ul>
             </div>
             <div class="col-lg-4 p-0">
               <h5>Info</h5>
@@ -213,6 +314,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.1/dist/sweetalert2.all.min.js"></script>
     <script>
       $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
         $('[data-toggle="popover"]').popover();
         $(".popover-dismiss").popover({
           trigger: "focus",
