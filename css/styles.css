@@ -1,6 +1,13 @@
+:root {
+  --backroung-gray: #f8f9fa;
+  --text: #666666;
+}
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--text);
 }
+
 /* Selector con REGEX */
 span[display="false"] {
   visibility: hidden;
@@ -21,4 +28,62 @@ div.message-options button {
 .picture-shared {
   display: flex;
   align-items: center;
+}
+
+/* Barra de chats */
+.nav-item h5 {
+  margin-bottom: 0px !important;
+}
+
+.contact-name,
+.nav-item h5 {
+  font-weight: 700;
+}
+
+.media-body h6 {
+  font-weight: 500;
+}
+
+.contact-chat div div.text-muted {
+  font-size: 0.9rem;
+  color: #c9c9c9;
+}
+
+#button-addon1:focus,
+.input-group-prepend button.btn.btn-outline-secondary,
+.input-group-prepend button.btn.btn-outline-secondary:active,
+.input-group-prepend button.btn.btn-outline-secondary:hover i,
+input[placeholder="Buscar en Messenger"],
+input[placeholder="Buscar en Messenger"]:focus {
+  border: none;
+  background: var(--backroung-gray);
+  box-shadow: none;
+  color: var(--text);
+}
+button#button-addon1 {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+input[placeholder="Buscar en Messenger"] {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding-left: 0px;
+}
+a.action-chat:hover {
+  text-decoration: none;
+}
+
+.contact-chat {
+  border-radius: 10px;
+}
+
+.form-inline button i {
+  color: black;
+}
+
+.form-inline button.chat-button {
+  background: var(--backroung-gray);
+  border-radius: 50%;
+  margin-left: 10px;
 }

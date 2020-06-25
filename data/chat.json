@@ -618,22 +618,6 @@
   {
     "from": 7,
     "to": 1,
-    "content": "https://www.nintendo.com/consumer/downloads/manual-3DS-the-legend-of-zelda-ocarina-of-time-3D-es.pdf",
-    "type": "file",
-    "date": "19:27",
-    "view": true
-  },
-  {
-    "from": 1,
-    "to": 7,
-    "content": "https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NAAAE.pdf",
-    "type": "file",
-    "date": "19:27",
-    "view": true
-  },
-  {
-    "from": 7,
-    "to": 1,
     "content": "🎮🎮",
     "type": "text",
     "date": "19:27",
@@ -850,14 +834,6 @@
   {
     "from": 9,
     "to": 1,
-    "content": "https://as01.epimg.net/us/imagenes/2019/03/19/futbol/1552950673_015624_1552951245_noticia_normal.jpg",
-    "type": "image",
-    "date": "12:46",
-    "view": true
-  },
-  {
-    "from": 9,
-    "to": 1,
     "content": "Muy bien, gracias",
     "type": "text",
     "date": "12:46",
@@ -890,7 +866,7 @@
   {
     "from": 1,
     "to": 10,
-    "content": "Lorem ipsum dolor",
+    "content": "Pasaré por las cosas en la noche",
     "type": "text",
     "date": "10:21",
     "view": true
@@ -898,7 +874,7 @@
   {
     "from": 10,
     "to": 1,
-    "content": "Lorem ipsum dolor sit amet",
+    "content": "Ok",
     "type": "text",
     "date": "10:32",
     "view": true
@@ -906,7 +882,7 @@
   {
     "from": 1,
     "to": 10,
-    "content": "Sit amet",
+    "content": "Las tenés listas, porque no quiero esperar",
     "type": "text",
     "date": "11:00",
     "view": true
@@ -914,7 +890,7 @@
   {
     "from": 10,
     "to": 1,
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "content": "Las tendré listas",
     "type": "text",
     "date": "11:03",
     "view": true
@@ -922,7 +898,7 @@
   {
     "from": 10,
     "to": 1,
-    "content": "Consectetur adipiscing elit",
+    "content": "Ya en una caja",
     "type": "text",
     "date": "11:04",
     "view": true
@@ -930,7 +906,7 @@
   {
     "from": 1,
     "to": 10,
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum libero id felis lacinia aliquet. Nulla maximus neque lorem, nec auctor quam aliquet tempor",
+    "content": "Las clasificás, por fa",
     "type": "text",
     "date": "11:12",
     "view": true
@@ -938,7 +914,7 @@
   {
     "from": 10,
     "to": 1,
-    "content": "¿Duis fermentum libero id felis lacinia aliquet?",
+    "content": "Las rotularé",
     "type": "text",
     "date": "11:15",
     "view": true
@@ -946,7 +922,7 @@
   {
     "from": 1,
     "to": 10,
-    "content": "Nulla maximus neque lorem",
+    "content": "Bueno",
     "type": "text",
     "date": "11:22",
     "view": true
@@ -954,7 +930,7 @@
   {
     "from": 1,
     "to": 10,
-    "content": "Lacinia aliquet",
+    "content": "Te escribo",
     "type": "text",
     "date": "11:23",
     "view": true
@@ -962,7 +938,7 @@
   {
     "from": 1,
     "to": 10,
-    "content": "Neque lorem",
+    "content": "Gracias",
     "type": "text",
     "date": "11:23",
     "view": true
@@ -970,7 +946,7 @@
   {
     "from": 10,
     "to": 1,
-    "content": "Nec auctor quam aliquet tempor",
+    "content": "Me avisas cuando estés cerca",
     "type": "text",
     "date": "11:36",
     "view": true
@@ -978,7 +954,7 @@
   {
     "from": 10,
     "to": 1,
-    "content": "🎉🎉",
+    "content": "Así salgo rápido",
     "type": "text",
     "date": "11:37",
     "view": true
@@ -986,7 +962,7 @@
   {
     "from": 1,
     "to": 10,
-    "content": "Aliquet tempor",
+    "content": "Vaya",
     "type": "text",
     "date": "11:42",
     "view": false
@@ -994,7 +970,7 @@
   {
     "from": 1,
     "to": 10,
-    "content": "Lorem ipsum dolor sit amet.",
+    "content": "Yo te llamo",
     "type": "text",
     "date": "11:43",
     "view": false
@@ -1002,7 +978,7 @@
   {
     "from": 2,
     "to": 3,
-    "content": "Sed eu dui ipsum",
+    "content": "Necesito comprar una laptop nueva",
     "type": "text",
     "date": "18:04",
     "view": true
@@ -1010,7 +986,7 @@
   {
     "from": 2,
     "to": 3,
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus, nulla id pellentesque vehicula, augue nunc eleifend massa, ut maximus lectus libero sed mi. Vestibulum semper scelerisque massa et egestas. Vivamus ultrices quam et molestie rutrum. Etiam interdum consequat pellentesque. Donec interdum tortor tellus, id",
+    "content": "He estado viendo algunos modelos, pero aún no me convenzo, creo que seguiré buscando buenas opciones en las tiendas en línea",
     "type": "text",
     "date": "18:06",
     "view": true
@@ -1018,7 +994,7 @@
   {
     "from": 3,
     "to": 2,
-    "content": "Vestibulum semper scelerisque massa et egestas",
+    "content": "He visto buenas opciones en Walmart",
     "type": "text",
     "date": "18:10",
     "view": true
@@ -1026,7 +1002,7 @@
   {
     "from": 3,
     "to": 2,
-    "content": "augue nunc eleifend massa",
+    "content": "Ya te las muestro",
     "type": "text",
     "date": "18:11",
     "view": true
@@ -1034,7 +1010,7 @@
   {
     "from": 3,
     "to": 2,
-    "content": "https://i.redd.it/3q6tdka3kvk31.png",
+    "content": "https://www.ofertasahora.com/wp-content/uploads/2020/01/COMPUTADORAS-Y-LAPTOPS-walmart-el-salvador-enero-2020.jpg",
     "type": "image",
     "date": "18:12",
     "view": true
@@ -1042,7 +1018,7 @@
   {
     "from": 2,
     "to": 3,
-    "content": "Etiam interdum consequat pellentesque",
+    "content": "Se ven bien",
     "type": "text",
     "date": "18:19",
     "view": true
@@ -1050,7 +1026,7 @@
   {
     "from": 2,
     "to": 3,
-    "content": "https://memegenerator.net/img/instances/58835568/lorem-ipsum-lorem-ipsum-everywhere.jpg",
+    "content": "https://www.itsitio.com/wp-content/uploads/2018/01/itsitio_160118_lenovo_laptops_640.jpg",
     "type": "image",
     "date": "18:24",
     "view": true
@@ -1058,7 +1034,7 @@
   {
     "from": 3,
     "to": 2,
-    "content": "Aenean hendrerit nunc nec quam mollis porta et vel augue. Donec hendrerit dolor nec pharetra dignissim. Integer at lacinia",
+    "content": "Esa marca es buena",
     "type": "text",
     "date": "18:27",
     "view": true
@@ -1066,7 +1042,7 @@
   {
     "from": 3,
     "to": 2,
-    "content": "Donec hendrerit dolor nec pharetra dignissim",
+    "content": "Yo tuve una y me duró bastante",
     "type": "text",
     "date": "18:28",
     "view": true
@@ -1074,7 +1050,7 @@
   {
     "from": 2,
     "to": 3,
-    "content": "Curabitur lorem purus",
+    "content": "Revisaré los precios",
     "type": "text",
     "date": "19:00",
     "view": true
@@ -1082,7 +1058,7 @@
   {
     "from": 3,
     "to": 2,
-    "content": "Molestie vitae lectus eget",
+    "content": "Me decís si te decidís por alguna para ver las especificaciones",
     "type": "text",
     "date": "19:05",
     "view": true
@@ -1090,7 +1066,7 @@
   {
     "from": 2,
     "to": 3,
-    "content": "tempus volutpat ex",
+    "content": "Ok, yo te cuento",
     "type": "text",
     "date": "20:06",
     "view": true
@@ -1098,7 +1074,7 @@
   {
     "from": 2,
     "to": 3,
-    "content": "Aliquam",
+    "content": "Ojalá encuentre una buena",
     "type": "text",
     "date": "20:07",
     "view": true
@@ -1106,7 +1082,7 @@
   {
     "from": 4,
     "to": 2,
-    "content": "Nulla facilisi",
+    "content": "Estoy buscando música de Soda Stereo y Cerati",
     "type": "text",
     "date": "15:08",
     "view": true
@@ -1114,7 +1090,7 @@
   {
     "from": 4,
     "to": 2,
-    "content": "Nisl nisi porta elit",
+    "content": "Mándame las mejores canciones, por fa",
     "type": "text",
     "date": "15:09",
     "view": true
@@ -1162,9 +1138,89 @@
   {
     "from": 4,
     "to": 2,
-    "content": "Gravida lacinia massa",
+    "content": "Gracias",
     "type": "text",
     "date": "16:56",
+    "view": true
+  },
+  {
+    "from": 2,
+    "to": 5,
+    "content": "Estoy buscando algunos libros para leer en mis descansos",
+    "type": "text",
+    "date": "19:26",
+    "view": true
+  },
+  {
+    "from": 2,
+    "to": 5,
+    "content": "Tengo demasiado tiempo libre",
+    "type": "text",
+    "date": "19:27",
+    "view": true
+  },
+  {
+    "from": 2,
+    "to": 5,
+    "content": "¿Me podrías pasar algunos de tu colección?",
+    "type": "text",
+    "date": "19:28",
+    "view": true
+  },
+  {
+    "from": 5,
+    "to": 2,
+    "content": "Hola",
+    "type": "text",
+    "date": "19:58",
+    "view": true
+  },
+  {
+    "from": 5,
+    "to": 2,
+    "content": "Ya te los envío",
+    "type": "text",
+    "date": "19:59",
+    "view": true
+  },
+  {
+    "from": 5,
+    "to": 2,
+    "content": "http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Corazon_Amicis.pdf",
+    "type": "file",
+    "date": "21:37",
+    "view": true
+  },
+  {
+    "from": 5,
+    "to": 2,
+    "content": "http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Anillo.pdf",
+    "type": "file",
+    "date": "21:40",
+    "view": true
+  },
+  {
+    "from": 5,
+    "to": 2,
+    "content": "http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/El_fantasma_de_Canterville-Oscar_Wilde.pdf",
+    "type": "file",
+    "date": "11:43",
+    "view": true
+  },
+  {
+    "from": 5,
+    "to": 2,
+    "content": "http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/ElPrincipito.pdf",
+    "type": "file",
+    "date": "21:54",
+    "view": true
+  },
+  {
+    "from": 2,
+    "to": 5,
+    "content": "Están geniales, gracias",
+    "type": "text",
+    "date": "22:12",
     "view": true
   }
 ]

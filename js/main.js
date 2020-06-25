@@ -340,7 +340,7 @@ const getChats = async (user) => {
       chatsContainer.insertAdjacentHTML(
         "beforeend",
         `<a class="action-chat" href="#" data-user="${user}" data-contact="${i}">
-          <div class="media my-2 p-2 text-dark rounded-lg contact-chat">
+          <div class="media my-2 p-2 text-dark contact-chat">
               <img
                 class="rounded-circle mr-2"
                 src="./img/user/${i}.jpg"
@@ -348,19 +348,19 @@ const getChats = async (user) => {
                 height="46.5"
               />
               <div class="media-body">
-                <span class="float-right" display="${c.view}">
-                  <img
-                    class="rounded-circle"
-                    src="./img/user/${i}.jpg"
-                    alt="user-picture"
-                    height="16"
-                /></span>
                 <h6 class="m-0 inline-block">${first_name} ${last_name}</h6>
                 <div class="text-muted">
                   ${preview}
                   <span> · ${c.date}</span>
                 </div>
               </div>
+              <span class="float-right" display="${c.view}">
+                  <img
+                    class="rounded-circle"
+                    src="./img/user/${i}.jpg"
+                    alt="user-picture"
+                    height="16"
+                /></span>
             </div>
           </div>
         </a>`
