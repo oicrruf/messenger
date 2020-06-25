@@ -1,6 +1,7 @@
 :root {
   --backroung-gray: #f8f9fa;
   --text: #666666;
+  --facebook: #0099ff;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -86,4 +87,24 @@ a.action-chat:hover {
   background: var(--backroung-gray);
   border-radius: 50%;
   margin-left: 10px;
+}
+
+/* Chat */
+.message-user div div.inline.mr-3,
+.message-contact div div.inline.mr-3 {
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
+}
+.message-user div div.inline.mr-3 img,
+.message-contact div div.inline.mr-3 img {
+  padding: 10px 0px 10px 0px;
+  border-radius: 10px;
+}
+.message-contact div div.inline.mr-3 {
+  background: var(--backroung-gray);
+  color: black;
+}
+.message-user div div.inline.mr-3 {
+  background: var(--facebook);
+  color: white;
 }
