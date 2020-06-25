@@ -2,6 +2,8 @@
   --backroung-gray: #f8f9fa;
   --text: #666666;
   --facebook: #0099ff;
+  --border: #dee2e6;
+  --text-collapsed: #a8a8a8;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -35,21 +37,19 @@ div.message-options button {
 .nav-item h5 {
   margin-bottom: 0px !important;
 }
-
 .contact-name,
 .nav-item h5 {
   font-weight: 700;
 }
-
 .media-body h6 {
   font-weight: 500;
 }
-
+.text-muted {
+  color: #c9c9c9 !important;
+}
 .contact-chat div div.text-muted {
   font-size: 0.9rem;
-  color: #c9c9c9;
 }
-
 #button-addon1:focus,
 .input-group-prepend button.btn.btn-outline-secondary,
 .input-group-prepend button.btn.btn-outline-secondary:active,
@@ -65,7 +65,6 @@ button#button-addon1 {
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
 }
-
 input[placeholder="Buscar en Messenger"] {
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -90,12 +89,12 @@ a.action-chat:hover {
 }
 
 /* Chat */
-.message-user div div.inline.mr-3,
+.message-user div div.inline.mr-0,
 .message-contact div div.inline.mr-3 {
   padding: 5px 15px 5px 15px;
   border-radius: 20px;
 }
-.message-user div div.inline.mr-3 img,
+.message-user div div.inline.mr-0 img,
 .message-contact div div.inline.mr-3 img {
   padding: 10px 0px 10px 0px;
   border-radius: 10px;
@@ -104,7 +103,49 @@ a.action-chat:hover {
   background: var(--backroung-gray);
   color: black;
 }
-.message-user div div.inline.mr-3 {
+.message-user div div.inline.mr-0 {
   background: var(--facebook);
   color: white;
+}
+
+/* Info de conversación */
+.card.border-0 {
+  border-radius: 0px;
+}
+.card-header.border-0 {
+  background: white;
+  border-top: 1px var(--border) solid !important;
+}
+.card-header.border-0 h2 button {
+  font-weight: 500;
+  color: var(--text-collapsed);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.card-header.border-0 h2 button,
+.card-header.border-0 h2 button:hover {
+  text-decoration: none;
+}
+.card-header.border-0 h2 button:focus {
+  box-shadow: none;
+}
+.card.border-0 .card-header.border-0:hover {
+  background: var(--backroung-gray);
+}
+.form-inline button.navbar-button i {
+  color: var(--facebook) !important;
+}
+.btn.btn-link.my-2.my-sm-0.navbar-button.info {
+  background: #d8efff !important;
+  border-radius: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.list-group-item.border-0 div div i {
+  float: right;
+}
+.list-group-item.border-0 div div i::before {
+  background: var(--backroung-gray) !important;
+  border-radius: 50%;
+  padding: 8px;
 }

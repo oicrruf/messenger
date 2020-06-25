@@ -200,7 +200,7 @@ const getMessages = async (user, contact) => {
                   `<li class="list-group-item border-0 message-user">
                     <div class="row pr-3">
                       ${mediaOptions}
-                      <div class="inline mr-3">
+                      <div class="inline mr-0">
                         <img
                           src="${c.content}"
                           alt=""
@@ -251,7 +251,7 @@ const getMessages = async (user, contact) => {
                   `<li class="list-group-item border-0 message-user">
                     <div class="row pr-3">
                     ${textOptions}
-                      <div class="inline mr-3">${
+                      <div class="inline mr-0">${
                         file_name[file_name.length - 1]
                       }</div>
                     </div>
@@ -280,7 +280,7 @@ const getMessages = async (user, contact) => {
                   `<li class="list-group-item border-0 message-user">
                     <div class="row pr-3">
                       ${textOptions}
-                      <div class="inline mr-3">${c.content}</div>
+                      <div class="inline mr-0">${c.content}</div>
                     </div>
                   </li>`
                 );
