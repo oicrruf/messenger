@@ -94,25 +94,27 @@
               </form>
             </div>
           </nav>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <button
-                class="btn btn-outline-secondary"
-                type="button"
-                id="button-addon1"
-              >
-                <i class="fas fa-search"></i>
-              </button>
+          <div id="chat-bar">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="button-addon1"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Buscar en Messenger"
+                aria-label="Example text with button addon"
+                aria-describedby="button-addon1"
+              />
             </div>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Buscar en Messenger"
-              aria-label="Example text with button addon"
-              aria-describedby="button-addon1"
-            />
+            <div class="chats-group"></div>
           </div>
-          <div class="chats-group"></div>
         </div>
         <div class="col-lg-9">
           <div class="row">
@@ -158,8 +160,8 @@
             </div>
             <div class="col-lg-8 border-right">
               <ul id="chat" class="list-group list-group-flush"></ul>
-              <div class="row my-2">
-                <div class="col-lg-3">
+              <div id="chat-form" class="row my-2">
+                <div class="col-lg-2">
                   <button class="btn btn-link my-2 my-sm-0">
                     <i class="fas fa-plus-circle"></i>
                   </button>
@@ -173,7 +175,7 @@
                     <i class="fas fa-image"></i>
                   </button>
                 </div>
-                <div class="input-group col-lg-8">
+                <div class="input-group col-lg-10">
                   <input
                     type="text"
                     class="form-control"
@@ -190,11 +192,11 @@
                       <i class="fas fa-smile"></i>
                     </button>
                   </div>
-                </div>
-                <div class="col-lg-1">
-                  <button class="btn btn-link my-2 my-sm-0">
-                    <i class="fas fa-thumbs-up"></i>
-                  </button>
+                  <div class="text-center">
+                    <button class="btn btn-link my-2 my-sm-0">
+                      <i class="fas fa-thumbs-up"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

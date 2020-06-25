@@ -54,17 +54,24 @@ div.message-options button {
 .input-group-prepend button.btn.btn-outline-secondary,
 .input-group-prepend button.btn.btn-outline-secondary:active,
 .input-group-prepend button.btn.btn-outline-secondary:hover i,
+.input-group-append button.btn.btn-outline-secondary,
+.input-group-append button.btn.btn-outline-secondary:active,
+.input-group-append button.btn.btn-outline-secondary:hover i,
 input[placeholder="Buscar en Messenger"],
+input[placeholder="Escribe un mensaje, agrega @nombre..."],
+input[placeholder="Escribe un mensaje, agrega @nombre..."]:focus,
 input[placeholder="Buscar en Messenger"]:focus {
   border: none;
   background: var(--backroung-gray);
   box-shadow: none;
   color: var(--text);
 }
-button#button-addon1 {
+button#button-addon1,
+input[placeholder="Escribe un mensaje, agrega @nombre..."] {
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
 }
+button#button-addon2,
 input[placeholder="Buscar en Messenger"] {
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -165,4 +172,25 @@ a.action-chat:hover {
 #picture-shared-body {
   padding-left: 12px;
   padding-right: 12px;
+}
+
+/* Formulario de chat */
+#chat-form div button {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+#chat-form div button.btn.btn-link.my-2.my-sm-0:first {
+  padding-left: 0px;
+}
+#chat-form div button i {
+  color: var(--facebook);
+  font-size: 1.3rem;
+}
+#chat-form div.input-group.col-lg-10 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#chat-form div.input-group.col-lg-10 div button {
+  padding-left: 15px;
+  padding-right: 15px;
 }
