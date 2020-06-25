@@ -161,15 +161,13 @@ const getMessages = async (user, contact) => {
                 filesSharedBody.insertAdjacentHTML(
                   "beforeend",
                   `<li class="list-group-item border-0 file-shared">
-                    <div class="row">
-                      <div class="col-1 p-0">
-                      <i class="far fa-file-pdf"></i>
-                      </div>
-                      <div class="col-11 pl-0">${
-                        file_name[file_name.length - 1]
-                      }</div>
-                    </div>
-                  </li>`
+                  <div class="row">
+                    <div class="col files">
+                    <i class="far fa-file-pdf"></i>${
+                      file_name[file_name.length - 1]
+                    }</div>
+                  </div>
+                </li>`
                 );
                 document
                   .getElementById("files-shared")
@@ -261,10 +259,8 @@ const getMessages = async (user, contact) => {
                   "beforeend",
                   `<li class="list-group-item border-0 file-shared">
                   <div class="row">
-                    <div class="col-1 p-0">
-                    <i class="far fa-file-pdf"></i>
-                    </div>
-                    <div class="col-11 pl-0">${
+                    <div class="col files">
+                    <i class="far fa-file-pdf"></i>${
                       file_name[file_name.length - 1]
                     }</div>
                   </div>
@@ -385,8 +381,9 @@ const getChats = async (user) => {
 };
 
 const messengerInit = (user) => {
+  $(".action-chat").remove();
   getUser(user);
   getChats(user);
 };
 
-messengerInit(1);
+messengerInit(2);

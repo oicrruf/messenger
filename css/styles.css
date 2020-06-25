@@ -144,8 +144,25 @@ a.action-chat:hover {
 .list-group-item.border-0 div div i {
   float: right;
 }
+.list-group-item.border-0 div div.files i {
+  float: left;
+}
 .list-group-item.border-0 div div i::before {
-  background: var(--backroung-gray) !important;
+  background: var(--backroung-gray);
   border-radius: 50%;
   padding: 8px;
+}
+.list-group-item.border-0 div div.files i::before {
+  background: none;
+  padding: 0px;
+  line-height: 24px;
+  padding-right: 15px;
+}
+.card-header.border-0 h2 button {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#picture-shared-body {
+  padding-left: 12px;
+  padding-right: 12px;
 }
