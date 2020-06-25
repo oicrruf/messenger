@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "first_name": "Víctor",
+    "last_name": "Reyes",
+    "gender": "male",
+    "picture": "1.jpg"
+  },
+  {
+    "id": 2,
+    "first_name": "Any",
+    "last_name": "Pérez",
+    "gender": "female",
+    "picture": "2.jpg"
+  },
+  {
+    "id": 3,
+    "first_name": "Chris",
+    "last_name": "Alvarenga",
+    "gender": "male",
+    "picture": "3.jpg"
+  },
+  {
+    "id": 4,
+    "first_name": "José Roberto",
+    "last_name": "Alvarez",
+    "gender": "male",
+    "picture": "4.jpg"
+  },
+  {
+    "id": 5,
+    "first_name": "Carlos",
+    "last_name": "Meléndez",
+    "gender": "male",
+    "picture": "5.jpg"
+  },
+  {
+    "id": 6,
+    "first_name": "Roberto E.",
+    "last_name": "Martínez",
+    "gender": "male",
+    "picture": "6.jpg"
+  },
+  {
+    "id": 7,
+    "first_name": "Carlos",
+    "last_name": "Monterrosa",
+    "gender": "male",
+    "picture": "7.jpg"
+  },
+  {
+    "id": 8,
+    "first_name": "Gilma",
+    "last_name": "Guerra",
+    "gender": "female",
+    "picture": "8.jpg"
+  },
+  {
+    "id": 9,
+    "first_name": "Karina",
+    "last_name": "Martínez",
+    "gender": "female",
+    "picture": "9.jpg"
+  },
+  {
+    "id": 10,
+    "first_name": "Maricela",
+    "last_name": "Ayala",
+    "gender": "female",
+    "picture": "10.jpg"
+  }
+]

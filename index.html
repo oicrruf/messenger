@@ -14,6 +14,7 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <meta name="theme-color" content="#fafafa" />
     <!-- Plugins adicionales para maquetación de messenger.com -->
     <link
@@ -21,15 +22,21 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
     <script src="https://kit.fontawesome.com/5756d40edb.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-3 border-right">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"
-              ><i class="fas fa-user-circle"></i
-            ></a>
+            <a class="navbar-brand" href="#">
+              <img
+                class="user-picture rounded-circle"
+                src="./img/user/unknown.jpg"
+                alt="user-picture"
+                height="28"
+              />
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -55,20 +62,20 @@
                   data-html="true"
                   data-content="<ul class='list-group'>
                     <li class='list-group-item p-1 border-0'>Configuración</li>
-                    <li class='list-group-item p-0 border-0'><hr class='m-0'/></li>
+                    <li class='list-group-item p-0 border-0'><hr class='m-1'/></li>
                     <li class='list-group-item p-1 border-0'>Contactos activos</li>
                     <li class='list-group-item p-1 border-0'>Solicitudes de mensajes</li>
                     <li class='list-group-item p-1 border-0'>Chats ocultos</li>
                     <li class='list-group-item p-1 border-0'>Chats no leídos</li>
-                    <li class='list-group-item p-0 border-0'><hr class='m-0'/></li>
+                    <li class='list-group-item p-0 border-0'><hr class='m-1'/></li>
                     <li class='list-group-item p-1 border-0'>Información</li>
                     <li class='list-group-item p-1 border-0'>Condiciones</li>
                     <li class='list-group-item p-1 border-0'>Política de privacidad</li>
                     <li class='list-group-item p-1 border-0'>Política de cookies</li>
-                    <li class='list-group-item p-0 border-0'><hr class='m-0'/></li>
+                    <li class='list-group-item p-0 border-0'><hr class='m-1'/></li>
                     <li class='list-group-item p-1 border-0'>Ayuda</li>
                     <li class='list-group-item p-1 border-0'>Reportar un problema</li>
-                    <li class='list-group-item p-0 border-0'><hr class='m-0'/></li>
+                    <li class='list-group-item p-0 border-0'><hr class='m-1'/></li>
                     <li class='list-group-item p-1 border-0'>Salir</li>
                   </ul>"
                   data-trigger="focus"
@@ -102,62 +109,19 @@
               aria-describedby="button-addon1"
             />
           </div>
-          <!-- Grupos de mensajes activo -->
-          <div class="media my-2 p-2 bg-light text-dark rounded-lg">
-            <i
-              class="fas fa-user-circle fa-3x mr-3"
-              style="color: #c9c9c9;"
-            ></i>
-            <div class="media-body">
-              <span class="float-right">
-                <i class="fas fa-user-circle" style="color: #e3e3e3;"></i
-              ></span>
-              <h6 class="m-0 inline-block">Nombre de Usuario</h6>
-              <div class="text-muted">
-                Cras sit amet nibh libero, in gravida nulla
-                <span> · 19:43</span>
-              </div>
-            </div>
-          </div>
-          <!-- Grupos de mensajes con visto -->
-          <div class="media my-2 p-2">
-            <i
-              class="fas fa-user-circle fa-3x mr-3"
-              style="color: #c9c9c9;"
-            ></i>
-            <div class="media-body">
-              <span class="float-right">
-                <i class="fas fa-user-circle" style="color: #e3e3e3;"></i
-              ></span>
-              <h6 class="m-0 inline-block">Nombre de Usuario</h6>
-              <div class="text-muted">
-                Cras sit amet nibh libero, in gravida nulla
-                <span> · 19:43</span>
-              </div>
-            </div>
-          </div>
-          <!-- Grupos de mensajes sin visto -->
-          <div class="media my-2 p-2">
-            <i
-              class="fas fa-user-circle fa-3x mr-3"
-              style="color: #c9c9c9;"
-            ></i>
-            <div class="media-body">
-              <h6 class="m-0 inline-block">Nombre de Usuario</h6>
-              <div class="text-muted">
-                Cras sit amet nibh libero, in gravida nulla
-                <span> · 19:43</span>
-              </div>
-            </div>
-          </div>
+          <div class="chats-group"></div>
         </div>
         <div class="col-lg-9">
           <div class="row">
             <div class="col-lg-12 border-bottom">
               <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"
-                  ><i class="fas fa-user-circle"></i
-                ></a>
+                  ><img
+                    class="contact-picture rounded-circle"
+                    src="./img/user/unknown.jpg"
+                    alt="user-picture"
+                    height="28"
+                /></a>
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -171,7 +135,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">User Name</li>
+                    <li class="nav-item contact-name"></li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
                     <button class="btn btn-link my-2 my-sm-0">
@@ -188,108 +152,7 @@
               </nav>
             </div>
             <div class="col-lg-8 border-right">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item border-0 text-right">
-                  Cras justo odio
-                </li>
-                <li class="list-group-item border-0">
-                  Dapibus ac facilisis in
-                </li>
-                <li class="list-group-item border-0 text-right">
-                  Morbi leo risus
-                </li>
-                <li class="list-group-item border-0 text-right">
-                  Morbi leo risus
-                </li>
-                <li class="list-group-item border-0 text-right">
-                  Morbi leo risus
-                </li>
-                <li class="list-group-item border-0">
-                  Porta ac consectetur ac
-                  <button
-                    class="btn btn-link p-0 mx-1"
-                    type="button"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title="Reaccionar"
-                  >
-                    <i class="far fa-smile text-muted"></i>
-                  </button>
-                  <button
-                    class="btn btn-link p-0 mx-1"
-                    type="button"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title="Responder"
-                  >
-                    <i class="fas fa-reply text-muted"></i>
-                  </button>
-                  <button
-                    class="btn btn-link p-0 mx-1"
-                    type="button"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title="Más"
-                  >
-                    <i class="fas fa-ellipsis-h ml-2 text-muted"></i>
-                  </button>
-                </li>
-                <li class="list-group-item border-0">Vestibulum at eros</li>
-                <li class="list-group-item border-0 text-right">
-                  <button
-                    class="btn btn-link p-0 mx-1"
-                    type="button"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title="Responder"
-                  >
-                    <i class="fas fa-reply text-muted"></i>
-                  </button>
-                  <button
-                    class="btn btn-link p-0 mx-1"
-                    type="button"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title="Más"
-                  >
-                    <i class="fas fa-ellipsis-h text-muted"></i>
-                  </button>
-                  Morbi leo risus
-                </li>
-                <li class="list-group-item border-0 text-right">
-                  Cras justo odio
-                </li>
-                <li class="list-group-item border-0 text-right">
-                  Cras justo odio
-                </li>
-                <li class="list-group-item border-0">
-                  <i class="fas fa-image fa-6x"></i>
-                  <button
-                    class="btn btn-link p-0 mx-1 text-muted"
-                    type="button"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title="Reenviar"
-                    style="margin-top: -60px;"
-                  >
-                    <i class="far fa-share-square"></i>
-                  </button>
-                </li>
-                <li class="list-group-item border-0 text-right">
-                  Morbi leo risus
-                </li>
-                <li class="list-group-item border-0 text-right">
-                  Morbi leo risus
-                </li>
-                <li class="list-group-item border-0">Vestibulum at eros</li>
-                <li class="list-group-item border-0 text-right">
-                  Morbi leo risus
-                </li>
-                <li class="list-group-item border-0">Vestibulum at eros</li>
-                <li class="list-group-item border-0 text-right">
-                  Morbi leo risus
-                </li>
-              </ul>
+              <ul id="chat" class="list-group list-group-flush"></ul>
               <div class="row my-2">
                 <div class="col-lg-3">
                   <button class="btn btn-link my-2 my-sm-0">
@@ -332,10 +195,15 @@
             </div>
             <div class="col-lg-4 p-0">
               <div class="my-5 text-center">
-                <i class="fas fa-user-circle fa-7x"></i>
-                <h5 class="mt-3">Nombre de Usuario</h5>
+                <img
+                  class="contact-picture rounded-circle"
+                  src="./img/user/unknown.jpg"
+                  alt="user-picture"
+                  height="112"
+                />
+                <h5 class="mt-3 contact-name"></h5>
               </div>
-              <div class="accordion" id="accordionExample">
+              <div class="accordion" id="more-options">
                 <div class="card border-0">
                   <div class="card-header border-0" id="headingOne">
                     <h2 class="mb-0">
@@ -351,12 +219,11 @@
                       </button>
                     </h2>
                   </div>
-
                   <div
                     id="collapseOne"
                     class="collapse show"
                     aria-labelledby="headingOne"
-                    data-parent="#accordionExample"
+                    data-parent="#more-options"
                   >
                     <div class="card-body p-0">
                       <ul class="list-group">
@@ -396,6 +263,8 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="accordion" id="privacity-and-help">
                 <div class="card border-0">
                   <div class="card-header border-0" id="headingTwo">
                     <h2 class="mb-0">
@@ -413,9 +282,9 @@
                   </div>
                   <div
                     id="collapseTwo"
-                    class="collapse"
+                    class="collapse show"
                     aria-labelledby="headingTwo"
-                    data-parent="#accordionExample"
+                    data-parent="#privacity-and-help"
                   >
                     <div class="card-body">
                       <ul class="list-group">
@@ -460,6 +329,8 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="accordion" id="files-shared">
                 <div class="card border-0">
                   <div class="card-header border-0" id="headingThree">
                     <h2 class="mb-0">
@@ -477,52 +348,19 @@
                   </div>
                   <div
                     id="collapseThree"
-                    class="collapse"
+                    class="collapse show"
                     aria-labelledby="headingThree"
-                    data-parent="#accordionExample"
+                    data-parent="#files-shared"
                   >
                     <div class="card-body">
-                      <ul class="list-group">
-                        <li class="list-group-item border-0">
-                          <div class="row">
-                            <div class="col-1">
-                              <i class="fas fa-file-pdf"></i>
-                            </div>
-                            <div class="col-11">cv.pdf</div>
-                          </div>
-                        </li>
-                        <li class="list-group-item border-0">
-                          <div class="row">
-                            <div class="col-1">
-                              <i class="fas fa-file-excel"></i>
-                            </div>
-                            <div class="col-11">cuentas.xlsx</div>
-                          </div>
-                        </li>
-                        <li class="list-group-item border-0">
-                          <div class="row">
-                            <div class="col-1">
-                              <i class="fas fa-file-word"></i>
-                            </div>
-                            <div class="col-11">ULTIMO AVANCE.docx</div>
-                          </div>
-                        </li>
-                        <li class="list-group-item border-0">
-                          <div class="row">
-                            <div class="col-1">
-                              <i class="fas fa-file-pdf"></i>
-                            </div>
-                            <div class="col-11">
-                              Donación - CE La Ermita.pdf
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
+                      <ul id="files-shared-body" class="list-group"></ul>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="accordion d-none" id="picture-shared">
                 <div class="card border-0">
-                  <div class="card-header border-0" id="headingFour">
+                  <div class="card-header border-0" id="picturesShared">
                     <h2 class="mb-0">
                       <button
                         class="btn btn-link btn-block text-left collapsed"
@@ -538,34 +376,12 @@
                   </div>
                   <div
                     id="collapseFour"
-                    class="collapse"
-                    aria-labelledby="headingFour"
-                    data-parent="#accordionExample"
+                    class="collapse show"
+                    aria-labelledby="picturesShared"
+                    data-parent="#picture-shared"
                   >
                     <div class="card-body">
-                      <div class="row">
-                        <div class="col-4 text-center">
-                          <i class="fas fa-image fa-6x"></i>
-                        </div>
-                        <div class="col-4 text-center">
-                          <i class="fas fa-image fa-6x"></i>
-                        </div>
-                        <div class="col-4 text-center">
-                          <i class="fas fa-image fa-6x"></i>
-                        </div>
-                        <div class="col-4 text-center">
-                          <i class="fas fa-image fa-6x"></i>
-                        </div>
-                        <div class="col-4 text-center">
-                          <i class="fas fa-image fa-6x"></i>
-                        </div>
-                        <div class="col-4 text-center">
-                          <i class="fas fa-image fa-6x"></i>
-                        </div>
-                        <div class="col-4 text-center">
-                          <i class="fas fa-image fa-6x"></i>
-                        </div>
-                      </div>
+                      <div id="picture-shared-body" class="row"></div>
                     </div>
                   </div>
                 </div>

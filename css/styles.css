@@ -1,0 +1,21 @@
+/* Selector con REGEX */
+span[display="false"] {
+  visibility: hidden;
+}
+div.message-options:hover button {
+  visibility: visible;
+}
+div.message-options button {
+  visibility: hidden;
+}
+.row.pr-3 {
+  float: right;
+}
+.message-user div div.inline.mr-3,
+.message-contact div div.inline.mr-3 {
+  max-width: 600px;
+}
+.picture-shared {
+  display: flex;
+  align-items: center;
+}
