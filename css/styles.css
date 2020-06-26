@@ -80,15 +80,12 @@ input[placeholder="Buscar en Messenger"] {
 a.action-chat:hover {
   text-decoration: none;
 }
-
 .contact-chat {
   border-radius: 10px;
 }
-
 .form-inline button i {
   color: black;
 }
-
 .form-inline button.chat-button {
   background: var(--backroung-gray);
   border-radius: 50%;
@@ -110,10 +107,6 @@ a.action-chat:hover {
 .message-contact div div.inline.mr-3 {
   background: var(--backroung-gray);
   color: black;
-}
-.message-user div div.inline.mr-0 {
-  background: var(--facebook);
-  color: white;
 }
 
 /* Info de conversación */
@@ -139,15 +132,6 @@ a.action-chat:hover {
 }
 .card.border-0 .card-header.border-0:hover {
   background: var(--backroung-gray);
-}
-.form-inline button.navbar-button i {
-  color: var(--facebook) !important;
-}
-.btn.btn-link.my-2.my-sm-0.navbar-button.info {
-  background: #d8efff !important;
-  border-radius: 50%;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 .list-group-item.border-0 div div i {
   float: right;
@@ -200,10 +184,6 @@ a.action-chat:hover {
 #chat-form div button.btn.btn-link.my-2.my-sm-0:first {
   padding-left: 0px;
 }
-#chat-form div button i {
-  color: var(--facebook);
-  font-size: 1.3rem;
-}
 #chat-form div.input-group {
   padding-left: 0px;
   padding-right: 0px;
@@ -212,7 +192,6 @@ a.action-chat:hover {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 #chat-bar,
 #chat,
 #info-conversation,
@@ -230,4 +209,38 @@ a.action-chat:hover {
 }
 #chat-form div.col-lg-2 {
   min-width: 130px;
+}
+
+/* Cambiar tema */
+a.change-color {
+  padding: 10px;
+}
+.change-color div {
+  height: 48px !important;
+  width: 48px !important;
+  border-radius: 50%;
+  display: inline-block;
+}
+.change-color.red div {
+  background: #fa3c4c;
+}
+.change-color.aqua div {
+  background: #44bec7;
+}
+.change-color.yellow div {
+  background: #ffc300;
+}
+.change-color.green div {
+  background: #13cf13;
+}
+.change-color.orange div {
+  background: #ff7e29;
+}
+.change-color.blue div {
+  background: #0099ff;
+}
+button.swal2-cancel.swal2-styled,
+button.swal2-cancel.swal2-styled:hover {
+  background: white;
+  color: var(--facebook);
 }

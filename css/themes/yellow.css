@@ -1,0 +1,20 @@
+.message-user div div.inline.mr-0 {
+  background: #ffc300;
+  color: white;
+}
+.form-inline button.navbar-button i {
+  color: #ffc300 !important;
+}
+#chat-form div button i {
+  color: #ffc300;
+  font-size: 1.3rem;
+}
+i.fas.fa-dot-circle {
+  color: #ffc300;
+}
+.btn.btn-link.my-2.my-sm-0.navbar-button.info {
+  background: #fff9e5 !important;
+  border-radius: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+}

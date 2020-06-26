@@ -14,6 +14,7 @@ const getUser = async (id) => {
         });
       }
     });
+    sessionStorage.setItem("user", id);
     return users;
   } catch (e) {
     console.error(e);
@@ -46,7 +47,7 @@ const getContact = async (contact) => {
         });
       }
     });
-
+    sessionStorage.setItem("contact", contact);
     return users;
   } catch (e) {
     console.error(e);
@@ -286,7 +287,18 @@ const getMessages = async (user, contact) => {
         });
       }
     });
-
+    if (localStorage.getItem(`theme_${parseInt(user) + parseInt(contact)}`)) {
+      document
+        .getElementById("theme")
+        .setAttribute(
+          "href",
+          localStorage.getItem(`theme_${parseInt(user) + parseInt(contact)}`)
+        );
+    } else {
+      document
+        .getElementById("theme")
+        .setAttribute("href", "css/themes/blue.css");
+    }
     return users;
   } catch (e) {
     console.error(e);
