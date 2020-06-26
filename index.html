@@ -26,11 +26,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/perfect-scrollbar.css" />
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-3 border-right">
+        <div class="col-lg-3 border-right p-0">
           <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
               <img
@@ -94,8 +95,8 @@
               </form>
             </div>
           </nav>
-          <div id="chat-bar">
-            <div class="input-group mb-3">
+          <div id="chat-bar" class="p-0">
+            <div class="input-group p-3">
               <div class="input-group-prepend">
                 <button
                   class="btn btn-outline-secondary"
@@ -160,13 +161,10 @@
             </div>
             <div class="col-lg-8 border-right">
               <ul id="chat" class="list-group list-group-flush"></ul>
-              <div id="chat-form" class="row my-2">
+              <div id="chat-form" class="row p-0">
                 <div class="col-lg-2">
                   <button class="btn btn-link my-2 my-sm-0">
                     <i class="fas fa-plus-circle"></i>
-                  </button>
-                  <button class="btn btn-link my-2 my-sm-0">
-                    <i class="fas fa-puzzle-piece"></i>
                   </button>
                   <button class="btn btn-link my-2 my-sm-0">
                     <i class="fas fa-file"></i>
@@ -200,7 +198,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 p-0">
+            <div id="info-conversation" class="col-lg-4 p-0">
               <div class="my-3 text-center">
                 <img
                   class="contact-picture rounded-circle"
@@ -399,8 +397,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.1/dist/sweetalert2.all.min.js"></script>
+    <script src="js/vendor/perfect-scrollbar.js"></script>
     <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip();
@@ -411,5 +409,6 @@
       });
     </script>
     <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
   </body>
 </html>

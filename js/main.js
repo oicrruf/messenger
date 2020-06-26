@@ -386,4 +386,4 @@ const messengerInit = (user) => {
   getChats(user);
 };
 
-messengerInit(2);
+messengerInit(1);
